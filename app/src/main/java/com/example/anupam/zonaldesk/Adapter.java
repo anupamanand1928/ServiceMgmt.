@@ -36,6 +36,12 @@ public class Adapter extends RecyclerView.Adapter<Adapter.myViewHolder>{
         holder.profile_photo.setImageResource(mData.get(position).getProfilePhoto());
         holder.tv_title.setText(mData.get(position).getProfileName());
         holder.tv_nbFollowers.setText(mData.get(position).getNbFollowers()+"Followers");
+        holder.background_img.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+            }
+        });
 
 
     }
