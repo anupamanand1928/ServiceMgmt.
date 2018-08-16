@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/db" android:title="@string/dashboard"   android:icon="@drawable/ic_002_dashboard" />
+        <item android:id="@+id/event" android:title="@string/event" android:icon="@drawable/ic_003_calendar_icon"/>
+        <item android:id="@+id/search" android:title="@string/search" android:icon="@drawable/ic_004_magnifier"/>
+        <item android:id="@+id/settings" android:title="@string/settings" android:icon="@drawable/ic_005_settings_work_tool"/>
+        <item android:id="@+id/activities" android:title="@string/activities" android:icon="@drawable/ic_001_thunderbolt"/>
+        <item android:id="@+id/share" android:title="@string/share"   android:icon="@drawable/ic_002_dashboard" />
+        <item android:id="@+id/send" android:title="@string/send" android:icon="@drawable/ic_003_calendar_icon"/>
+        <item android:id="@+id/logout" android:title="@string/logout" android:icon="@drawable/ic_006_logout"/>
+    </group>
+</menu>

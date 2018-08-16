@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "440162397414",
+    "firebase_url": "https://zonaldesk-42971.firebaseio.com",
+    "project_id": "zonaldesk-42971",
+    "storage_bucket": "zonaldesk-42971.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:440162397414:android:2c1209ac62fc8a5c",
+        "android_client_info": {
+          "package_name": "com.example.anupam.zonaldesk"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "440162397414-iaeuc3hp6hdngsdjp9a6r8f6gsqu98gt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAXfLHyFEceUqm4q5jM3_NlULb8o2gR0i8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

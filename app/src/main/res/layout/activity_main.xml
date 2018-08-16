@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawer"
+    tools:context="com.example.anupam.zonaldesk.MainActivity"
+    android:background="@drawable/loginbackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:padding="10dp"
+            android:src="@drawable/logo" />
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="30dp"
+            app:cardBackgroundColor="@color/cardview_shadow_start_color"
+            app:cardCornerRadius="8dp">
+
+            <EditText
+                android:id="@+id/etEmailLayout"
+                android:layout_width="275dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="28dp"
+                android:hint="Email-ID"
+                android:maxLines="1"
+                android:inputType="text"
+                android:scrollHorizontally="true">
+
+            </EditText>
+
+            <EditText
+                android:id="@+id/etPasswordLayout"
+                android:layout_width="275dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="86dp"
+                android:ems="10"
+                android:hint="Password"
+                android:inputType="textPassword"
+                app:passwordToggleEnabled="true">
+
+            </EditText>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="140dp"
+                android:orientation="horizontal">
+
+
+                <CheckBox
+                    android:id="@+id/checkBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:text="@string/remember_me"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/lightgrey" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="forgot_password"
+                    android:text="@string/forgot_password"
+                    android:layout_marginLeft="45dp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/darkgrey"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="200dp"
+                android:background="@drawable/buttonstyle"
+                android:text="Login"
+                android:textColor="@color/backgroundcolor" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="260dp"
+                android:onClick="sign_up"
+                android:text="@string/not_a_member_yet_sign_up_here" />
+
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+</RelativeLayout>
+
