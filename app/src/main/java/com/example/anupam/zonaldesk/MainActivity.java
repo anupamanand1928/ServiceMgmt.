@@ -77,6 +77,7 @@ public class MainActivity extends AppCompatActivity {
                         }
                         else {
                             Toast.makeText(getApplicationContext(), "Login Failed",Toast.LENGTH_LONG).show();
+                            progressBar.setVisibility(View.GONE);
                         }
                     }
                 });
