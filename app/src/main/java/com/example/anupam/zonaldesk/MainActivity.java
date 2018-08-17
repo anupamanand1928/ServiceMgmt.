@@ -1,6 +1,7 @@
 package com.example.anupam.zonaldesk;
 
 import android.annotation.SuppressLint;
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.design.widget.TextInputEditText;
@@ -21,6 +22,7 @@ import android.view.View;
 import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ProgressBar;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -33,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
     private EditText Username,Password;
     FirebaseAuth firebaseAuth;
     Button Login;
-
+    ProgressBar progressBar;
 
     @SuppressLint("WrongViewCast")
     @Override
@@ -41,6 +43,7 @@ public class MainActivity extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         Login = (Button)findViewById(R.id.login);
         Login.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -59,13 +62,17 @@ public class MainActivity extends AppCompatActivity {
 
         /*BackgroundWorker backgroundWorker = new BackgroundWorker(this);
         backgroundWorker.execute(type, username, password);*/
+                progressBar = (ProgressBar)findViewById(R.id.progress);
+                progressBar.setVisibility(View.VISIBLE);
                 firebaseAuth.signInWithEmailAndPassword(username,password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if(task.isSuccessful()){
+
                             Toast.makeText(getApplicationContext(), "Login Successful",Toast.LENGTH_LONG).show();
                             Intent intent = new Intent(MainActivity.this, CustomerActivity.class);
                             startActivity(intent);
+                            progressBar.setVisibility(View.GONE);
                             Password.setText("");
                         }
                         else {
