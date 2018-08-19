@@ -27,7 +27,7 @@ public class CustomerActivity extends AppCompatActivity {
     {
         FirebaseAuth.getInstance().signOut();
         finish();
-        startActivity(new Intent(this,MainActivity.class));
+        startActivity(new Intent(this,LoginActivity.class));
     }
     public void newservice(View view)
     {

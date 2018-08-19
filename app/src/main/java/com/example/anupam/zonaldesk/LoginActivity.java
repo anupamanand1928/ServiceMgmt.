@@ -27,7 +27,7 @@ public class LoginActivity extends AppCompatActivity {
     FirebaseAuth auth;
     GoogleSignInClient mGoogleSignInClient;
     SignInButton signInButton;
-    Button EmailLogin;
+    Button EmailLogin,PhoneLogin;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,6 +35,15 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
         getSupportActionBar().hide();
+
+        PhoneLogin = (Button) findViewById(R.id.phoneLogin);
+        PhoneLogin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(LoginActivity.this, PhoneLoginActivity.class);
+                startActivity(intent);
+            }
+        });
 
         EmailLogin = (Button) findViewById(R.id.emailLogin);
         EmailLogin.setOnClickListener(new View.OnClickListener() {

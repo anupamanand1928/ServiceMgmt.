@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/estimatebottom"
+    android:background="@color/colorPrimary"
+    android:paddingRight="16dp"
+    android:paddingLeft="16dp"
+    app:layout_behavior="android.support.design.widget.BottomSheetBehaviour"
+    app:behavior_hideable="true"
+    app:behavior_peekHeight="?android:attr/actionBarSize">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="56dp"
+        android:textSize="16sp"
+        android:textColor="@color/backgroundcolor"
+        android:text="Estimate"
+        android:gravity="center_vertical"/>
+    <LinearLayout
+        android:background="?android:attr/selectableItemBackground"
+        android:focusable="true"
+        android:clickable="true"
+        android:id="@+id/keeplayout"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+
+        <ImageView
+            android:src="@drawable/logo"
+            android:layout_width="24dp"
+            android:layout_height="24dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/backgroundcolor"
+            android:text="Keep"
+            android:layout_marginLeft="32dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:background="?android:attr/selectableItemBackground"
+        android:focusable="true"
+        android:clickable="true"
+        android:id="@+id/email"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+
+        <ImageView
+            android:src="@drawable/ic_iconmonstr_email_5"
+            android:layout_width="24dp"
+            android:layout_height="24dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/backgroundcolor"
+            android:text="Email"
+            android:layout_marginLeft="32dp" />
+    </LinearLayout>
+</LinearLayout>

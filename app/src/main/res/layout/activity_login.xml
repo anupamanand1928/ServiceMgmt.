@@ -31,26 +31,42 @@
             android:layout_marginTop="20dp"
             android:padding="10dp"
             android:src="@drawable/logo" />
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="10dp">
 
+            <Button
+                android:id="@+id/phoneLogin"
+                android:layout_width="80dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="253dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/buttonstyle2"
+                android:text="Phone Sign In"
+                android:textColor="@color/backgroundcolor"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp">
+
             <com.google.android.gms.common.SignInButton
                 android:layout_width="80dp"
                 android:layout_height="50dp"
                 android:layout_marginLeft="0dp"
-                android:layout_marginTop="300dp"
+                android:layout_marginTop="0dp"
                 android:layout_weight="1"
                 android:id="@+id/googlelogin">
             </com.google.android.gms.common.SignInButton>
-
 
             <Button
                 android:id="@+id/emailLogin"
                 android:layout_width="80dp"
                 android:layout_height="45dp"
-                android:layout_marginTop="303dp"
+                android:layout_marginTop="3dp"
                 android:layout_marginLeft="5dp"
                 android:layout_weight="1"
                 android:background="@drawable/buttonstyle2"

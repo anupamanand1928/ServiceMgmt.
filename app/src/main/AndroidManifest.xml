@@ -63,7 +63,9 @@
         <activity
             android:name=".CustomerServiceMainActivity"
             android:screenOrientation="portrait" />
-        <activity android:name=".ServiceViewActivity"></activity>
+        <activity android:name=".ServiceViewActivity" />
+        <activity android:name=".PhoneLoginActivity" />
+        <activity android:name=".VerifyPhoneActivity"></activity>
     </application>
 
 </manifest>
