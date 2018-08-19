@@ -31,11 +31,21 @@ public class Adapter extends RecyclerView.Adapter<Adapter.myViewHolder>{
     }
 
     @Override
-    public void onBindViewHolder(myViewHolder holder, int position) {
+    public void onBindViewHolder(myViewHolder holder, final int position) {
         holder.background_img.setImageResource(mData.get(position).getBackground());
         holder.profile_photo.setImageResource(mData.get(position).getProfilePhoto());
         holder.tv_title.setText(mData.get(position).getProfileName());
         holder.tv_nbFollowers.setText(mData.get(position).getNbFollowers()+"Followers");
+        holder.background_img.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(mContent,ServiceViewActivity.class);
+                intent.putExtra("background",mData.get(position).getBackground());
+                // start the activity
+                mContent.startActivity(intent);
+
+            }
+        });
     }
 
     @Override
